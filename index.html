@@ -1,59 +1,96 @@
 <!DOCTYPE html>
 <html lang="tr">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   ÖREN Games
-  </title>
-  <style>
-   body, html {
-        height: 100%;
-        margin: 0;
-        font-family: Arial, sans-serif;
-    }
-    .sidebar {
-        height: 100%;
-        width: 25%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #2a2a2a;
-        overflow-x: hidden;
-        padding-top: 20px;
-    }
-    .sidebar img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-    .main {
-        margin-left: 25%; /* Same as the width of the sidebar */
-        font-size: 28px; /* Increased text to enable scrolling */
-        padding: 0px 10px;
-    }
-    .main h1 {
-        color: #333;
-        font-size: 50px;
-    }
-    .main p {
-        color: #666;
-    }
-  </style>
- </head>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        ÖRTEKE Games
+    </title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 25%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #2a2a2a;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+            .sidebar img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+
+        .main {
+            margin-left: 25%; /* Same as the width of the sidebar */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+            .main h1 {
+                color: #333;
+                font-size: 50px;
+            }
+
+            .main p {
+                color: #666;
+            }
+
+        .summary {
+            color: white;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 80;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+        .profile-photo {
+            width: 50px !important; /* Genişlik */
+            height: 50px !important; /* Yükseklik */
+            border-radius: 50% !important; /* Tam daire için %50 */
+            overflow: hidden !important; /* Taşan kısımları gizle */
+        }
+
+        .background-div {
+            width: 100%; /* Div genişliği */
+            height: 100%; /* Div yüksekliği */
+            background-image: url('https://raw.githubusercontent.com/orteke/website/refs/heads/main/Habitus.png'); /* Arka plan resmi */
+            background-size: cover; /* Resmi div'e sığdır */
+            background-position: center; /* Resmi ortala */
+            background-repeat: no-repeat; /* Resmi tekrar ettirme */
+            border: 1px solid #ccc; /* Çerçeve (isteğe bağlı) */
+        }
+ 
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
  <body>
-  <div class="sidebar">
-   <img style="padding-top: 50px" alt="ÖRTEKE Games Logo" src="https://unreal-lore.orteke.com/static/media/orteke.28872ec7cf7cf2e21740.jpg"/>
-  </div>
-  <div class="main">
-   <h1>
-    ÖRTEKE
-   </h1>
-   <p>
-    Kurulum aşamasındayız...
-   </p>
+     <div class="sidebar">
+         <img style="padding-top: 50px" alt="ÖRTEKE Games Logo" src="https://raw.githubusercontent.com/orteke/website/refs/heads/main/Orteke.png" />
+         <p class="summary" style="padding-left: 25%;padding-right: 25%; margin-left: 50px;">
+             Inspired by the ancient puppet art of Turkistan, Örteke is an independent game studio dedicated to bringing innovative stories rooted in tradition to the gaming world.
+             With unique designs, profound narratives, and captivating experiences, we take our players on unforgettable journeys.
+         </p>
+         <p class="summary" style="padding-left: 25%;padding-right: 25%; margin-left: 50px;float: left;">
+             - CEM KIY <b style="font-style: italic;">(director)</b>
+         </p><br /><br /><br /><br />
+         <img  class="profile-photo" src="https://media.licdn.com/dms/image/v2/C4E03AQFmS4xD5t9mEQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1523616278572?e=2147483647&v=beta&t=_6Fil3beWrE-P8hHDIOi4yAo9UFQF1esJNjPbMU12Hk" />
+     </div>
+  <div class="main background-div" >
   </div>
  </body>
 </html>
